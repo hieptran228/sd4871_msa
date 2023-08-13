@@ -1,0 +1,13 @@
+<Project>
+
+  <PropertyGroup>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <NoWarn>NU1603;NU5104;NU5118;CS1591</NoWarn>
+    <WarningsAsErrors />
+    <SolutionDir Condition="'$(DOTNET_SOLUTION_DIR)' != ''">$(DOTNET_SOLUTION_DIR)</SolutionDir>
+    <RuntimeIdentifier Condition="'$(DOTNET_RUNTIME_IDENTIFIER)' != ''">$(DOTNET_RUNTIME_IDENTIFIER)</RuntimeIdentifier>
+    <RuntimeFrameworkVersion>$([MSBuild]::ValueOrDefault('$(DOTNET_RUNTIME_TARGET)', '6.0.9'))</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+</Project>

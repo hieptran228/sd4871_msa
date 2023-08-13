@@ -1,0 +1,10 @@
+name: bookstore
+build:
+  flow:
+    name: dotnet
+  testing:
+    enabled: true
+  runtime:
+    name: BookStore.API.dll
+  deploy:
+    enabled: false
