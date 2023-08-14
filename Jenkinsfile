@@ -1,10 +1,11 @@
 #!/usr/bin/env groovy
 //========================================================================
-// Demo CI
+// Node CI
 // Version: v1.x
 //========================================================================
 @Library('devops-jenkins-ci@main') _
-demoPipeline script: this
+nodeBackendPipeline script: this
+nodeFrontendPipeline script: this
 //========================================================================
 // DO NOT MODIFY AFTER THESE LINES.
 //========================================================================
