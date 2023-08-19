@@ -369,9 +369,6 @@ FodyWeavers.xsd
 
 **/appsettings.*.json
 
-**/package-*.json
-
-
 **/TestResults/
 coveragereport/
 
