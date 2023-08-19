@@ -24,7 +24,7 @@ export default class App extends React.Component {
       .catch((e) => console.log("Error : ", e));
 
     axios
-      .get("/metrics")
+      .get("/api/metrics")
       .then((response) => {
         console.log(response);
       })
