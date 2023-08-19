@@ -22,6 +22,13 @@ export default class App extends React.Component {
         });
       })
       .catch((e) => console.log("Error : ", e));
+
+    axios
+      .get("/metrics")
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((e) => console.log("Error : ", e));
   }
 
   handleAddTodo = (value) => {
@@ -41,7 +48,7 @@ export default class App extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-xs-12 col-sm-8 col-md-8 offset-md-2">
-              <h1>Todos - V2.0.3</h1>
+              <h1>Todos - V2.1</h1>
               <div className="todo-app">
                 <AddTodo handleAddTodo={this.handleAddTodo} />
                 <TodoList todos={this.state.todos} />
